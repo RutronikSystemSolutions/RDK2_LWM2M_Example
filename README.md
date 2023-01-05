@@ -13,7 +13,7 @@ This code example is for the Telit's LPWA modem ME310G1-WW and Telit's [portal-d
 ### Using the code example with a ModusToolbox IDE:
 
 1. Import the project: **File** > **Import...** > **General** > **Existing Projects into Workspace** > **Next**.
-2. Select the directory where **"RDK2_RAB2-CO2_Demo"** resides and click  **Finish**.
+2. Select the directory where **"RDK2_LWM2M_Example"** resides and click  **Finish**.
 3. Update libraries using  a **"Library Manager"** tool.
 4. Select and build the project **Project ** > **Build Project**.
 
