@@ -1,10 +1,10 @@
-# RDK2_LWM2M_Example
+# RAB2-CO2 and RDK2 Code Example
 
-Rutronik Development Kit Programmable System-on-Chip CY8C6245AZI-S3D72 "RDK2_LWM2M_Example" Code Example. 
+Rutronik Development Kit Programmable System-on-Chip CY8C6245AZI-S3D72 "RDK2_LWM2M_Example" Code Example.
 
 This code example is for the Telit's LPWA modem ME310G1-WW and Telit's [portal-dev.telit](https://portal-dev.telit.com/app/login) cloud demonstration. The unreleased Arduino shield's prototype [RUT_xE310](https://github.com/RutronikKaunas/RUT_xE310_Shield) has been used for creating this code example. Example also uses [RAB-CO2 shield](https://github.com/RutronikSystemSolutions/RDK2_RAB2-CO2_Demo) sensors for collecting the data to be sent to Telit's cloud.
 
-![image-20230105092532747](C:\Users\BAS\AppData\Roaming\Typora\typora-user-images\image-20230105092644038.png)
+![](./images/hardware.jpg)
 
 ## Requirements
 
@@ -13,27 +13,27 @@ This code example is for the Telit's LPWA modem ME310G1-WW and Telit's [portal-d
 ### Using the code example with a ModusToolbox IDE:
 
 1. Import the project: **File** > **Import...** > **General** > **Existing Projects into Workspace** > **Next**.
-2. Select the directory where **"RDK2_LWM2M_Example"** resides and click  **Finish**.
+2. Select the directory where **"RDK2_RAB2-CO2_Demo"** resides and click  **Finish**.
 3. Update libraries using  a **"Library Manager"** tool.
 4. Select and build the project **Project ** > **Build Project**.
 
 ### Operation
 
-The firmware example uses KitProg3 Debug UART for debug output. After the sensors and modem are initiated the values are displayed in the terminal:
+The firmware example uses KitProg3 Debug UART for the debug output. The results are read from the sensor and are printed on the terminal window:
 
-![image-20230105093306495](C:\Users\BAS\AppData\Roaming\Typora\typora-user-images\image-20230105093306495.png) 
+![](./images/terminal.png)
 
 Once per minute the data is sent as an AT command via UART to the modem which posts the message to the cloud via LWM2M protocol:
 
-![image-20230105092807292](C:\Users\BAS\AppData\Roaming\Typora\typora-user-images\image-20230105092807292.png)
+![](./images/CO2.png)
 
-![image-20230105092827599](C:\Users\BAS\AppData\Roaming\Typora\typora-user-images\image-20230105092827599.png)
+![](./images/temp&humidity.png)
 
 ### Debugging
 
-If you successfully have imported the example, the debug configurations are already prepared to use with a the KitProg3, MiniProg4, or J-link. Open the ModusToolbox perspective and find the Quick Panel. Click on the desired debug launch configuration and wait for the programming completes and debug process starts.
+If you successfully have imported the example, the debugging configurations are already prepared to be used with a the KitProg3, MiniProg4, or J-link. Open the ModusToolbox perspective and find the Quick Panel. Click on the desired debug launch configuration and wait for the programming to  complete and debugging process to start.
 
-<img src="images/debug.png" style="zoom:100%;" />
+<img src="images/debugging.png" style="zoom:100%;" />
 
 ## Legal Disclaimer
 
